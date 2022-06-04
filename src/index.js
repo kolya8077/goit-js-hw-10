@@ -40,9 +40,9 @@ function renderCountryList(countries) {
   const markup = countries
     .map(({ name, flags }) => {
       return `
-        <li class = "country-list_item">
-            <img class = "list country-list_flag" src = "${flags.svg}" alt = "Flag of ${name.official}"width = 100px height = 60px>
-            <h2 class = "country-list_name">${name.official}</h2>
+        <li>
+            <img class = "list" src = "${flags.svg}" alt = "Flag of ${name.official}"width = 100px height = 60px>
+            <h2>${name.official}</h2>
             </li>
             `;
     })
@@ -54,10 +54,10 @@ function renderCountryInfo(countries) {
   const markup = countries
     .map(({ capital, population, languages }) => {
       return `
-        <ul class = "country-info_list">
-            <li class = "country-info_item"><p><b>Capital: </b>${capital}</p></li>
-            <li class = "country-info_item"><p><b>Population: </b>${population}</p></li>
-            <li class = "country-info_item"><p><b>languages: </b>${Object.values(languages).join(
+        <ul>
+            <li><p><b>Capital: </b>${capital}</p></li>
+            <li><p><b>Population: </b>${population}</p></li>
+            <li><p><b>languages: </b>${Object.values(languages).join(
               ', ',
             )}</p></li>
         </ul>
