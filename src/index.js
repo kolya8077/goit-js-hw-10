@@ -57,9 +57,7 @@ function renderCountryInfo(countries) {
         <ul>
             <li><p><b>Capital: </b>${capital}</p></li>
             <li><p><b>Population: </b>${population}</p></li>
-            <li><p><b>languages: </b>${Object.values(languages).join(
-              ', ',
-            )}</p></li>
+            <li><p><b>languages: </b>${Object.values(languages).join(', ')}</p></li>
         </ul>
         `;
     })
